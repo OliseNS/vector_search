@@ -1,2 +1,8 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+all-MiniLM-L6-v2/*.bin filter=lfs diff=lfs merge=lfs -text
+all-MiniLM-L6-v2/*.safetensors filter=lfs diff=lfs merge=lfs -text
+all-MiniLM-L6-v2/*.h5 filter=lfs diff=lfs merge=lfs -text
+all-MiniLM-L6-v2/*.ot filter=lfs diff=lfs merge=lfs -text
+all-MiniLM-L6-v2/onnx/*.onnx filter=lfs diff=lfs merge=lfs -text
+all-MiniLM-L6-v2/openvino/*.bin filter=lfs diff=lfs merge=lfs -text
