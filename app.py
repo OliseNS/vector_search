@@ -521,3 +521,23 @@ if st.session_state.get('search_results'):
 
 # Hide chat input and history for pure search engine mode
 # (If you want to keep chat, move it to a separate tab or page)
+
+# Footer
+st.markdown('''
+<div style="
+    text-align: center;
+    padding: 40px 20px 20px 20px;
+    margin-top: 60px;
+    border-top: 1px solid #e5e8ee;
+    background: #f8fafc;
+    font-size: 14px;
+    color: #6b7280;
+">
+    Made by <a href="https://olisemeka.dev" target="_blank" style="
+        color: #2a4d8f;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.2s ease;
+    " onmouseover="this.style.color='#1a365d'" onmouseout="this.style.color='#2a4d8f'">olisemeka</a>
+</div>
+''', unsafe_allow_html=True)
